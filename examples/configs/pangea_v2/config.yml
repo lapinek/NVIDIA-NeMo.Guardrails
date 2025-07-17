@@ -6,6 +6,13 @@ models:
     model: gpt-4o-mini
 
 rails:
+  config:
+    pangea:
+      input:
+        recipe: pangea_prompt_guard
+      output:
+        recipe: pangea_llm_response_guard
+
   dialog:
     single_call:
       enabled: False
